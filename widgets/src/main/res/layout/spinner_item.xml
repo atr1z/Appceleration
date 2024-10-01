@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="sans-serif-black"
+    android:paddingStart="@dimen/normal"
+    android:paddingTop="@dimen/small"
+    android:paddingEnd="@dimen/normal"
+    android:paddingBottom="@dimen/small"
+    android:textColor="@color/text"
+    android:textSize="14sp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:text="Me la pelan todos ustedes perros"/>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dialog_permission_consult_our">Consulta nuestra</string>
+    <string name="dialog_permission_privacy_politics">Políticas de privacidad</string>
+    <string name="ask_permission">Solicitar permiso</string>
+    <string name="description_edit_profile">Editar información personal del usuario</string>
+    <string name="logout">Cerrar sesión</string>
+
+
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancelar</string>
+    <string name="continuar">Continuar</string>
+    <string name="error">Error</string>
+    <string name="empty_field_error">Este campo requiere información, no es posible continuar con este campo vacio</string>
+    <string name="set_value">Ingresa un valor</string>
+    <string name="unknown">Este elemento no está disponible aún</string>
+    <string name="icon_description_calendar">Ingresa la fecha deseada</string>
+</resources>

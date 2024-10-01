@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginStart="@dimen/large"
+    android:layout_marginEnd="@dimen/large"
+    android:layout_marginTop="@dimen/normal"
+    android:background="@drawable/background_round"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/form_input_info"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:visibility="gone"/>
+    <EditText
+        android:id="@+id/form_input"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:fontFamily="sans-serif"
+        android:textSize="@dimen/normalText"
+        android:paddingStart="@dimen/normal"
+        android:paddingEnd="@dimen/normal"
+        android:inputType="text"
+        android:importantForAutofill="no" />
+    <Button
+        android:id="@+id/form_input_action"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:visibility="gone"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

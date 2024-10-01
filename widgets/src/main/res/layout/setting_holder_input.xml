@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/large"
+    android:orientation="horizontal"
+    android:id="@+id/input"
+    android:paddingStart="@dimen/large"
+    android:paddingEnd="@dimen/large">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/small"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/input_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:maxLines="1"
+            android:textColor="@color/text60"
+            android:ellipsize="end"
+            tools:text="Pos aquí el titulo prro"/>
+        <TextView
+            android:id="@+id/input_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/text60"
+            tools:text="Quiubo prru, esto si tiene que ir en el codigo alv, si no te gusta pos programalo tu pendejo" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/input_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="sans-serif-black"
+        android:textSize="18sp"
+        android:textColor="@color/text"
+        android:maxLength="10"
+        tools:text="10,000,000.00"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

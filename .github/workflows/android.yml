@@ -1,0 +1,33 @@
+name: Plugin release
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'zulu'
+          cache: gradle
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+      - name: Build with Gradle
+        run: ./gradlew build
+      - name: Publish to Maven Central
+        run: |
+          export ORG_GRADLE_PROJECT_mavenCentralUsername=${{secrets.USER}}
+          export ORG_GRADLE_PROJECT_mavenCentralPassword=${{secrets.PASSWORD}}
+          export ORG_GRADLE_PROJECT_signingInMemoryKey=${{secrets.KEY}}
+          export ORG_GRADLE_PROJECT_signingInMemoryKeyId=${{secrets.KEY_ID}}
+          export ORG_GRADLE_PROJECT_signingInMemoryKeyPassword=${{secrets.KEY_PASS}}
+          ./gradlew publish

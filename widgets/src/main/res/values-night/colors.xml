@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text">#FFFFFF</color>
+    <color name="text_light">#000000</color>
+    <color name="text_warning">#ff7a7b</color>
+
+    <color name="background_dialog">#1F1F1F</color>
+
+    <color name="settings_card_background">#131313</color>
+    <color name="settings_icon">#FFFFFF</color>
+    <color name="card_background">#000000</color>
+</resources>

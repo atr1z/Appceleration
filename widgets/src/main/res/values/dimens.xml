@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_corner_radius">10dp</dimen>
+    <dimen name="pen_size">3dp</dimen>
+    <dimen name="large">24dp</dimen>
+    <dimen name="normal">16dp</dimen>
+    <dimen name="small">8dp</dimen>
+
+    <dimen name="normalText">16sp</dimen>
+    <dimen name="smallText">12sp</dimen>
+    <dimen name="titleText">24sp</dimen>
+    <dimen name="subtitleText">14sp</dimen>
+</resources>
