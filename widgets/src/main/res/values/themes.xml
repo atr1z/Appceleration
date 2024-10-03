@@ -32,12 +32,14 @@
         <item name="android:statusBarColor">@color/md_theme_light_background</item>
         <item name="android:windowLightStatusBar">true</item>
     </style>
+
     <style name="Splash_Title" parent="TextAppearance.AppCompat">
         <item name="android:textSize">45sp</item>
         <item name="fontFamily">sans-serif-black</item>
         <item name="maxLines">1</item>
         <item name="android:ellipsize">end</item>
     </style>
+
     <style name="Title" parent="TextAppearance.AppCompat">
         <item name="android:textSize">22sp</item>
         <item name="fontFamily">sans-serif-black</item>
@@ -66,6 +68,7 @@
         <item name="maxLines">1</item>
         <item name="android:ellipsize">end</item>
     </style>
+
     <style name="Login_Input" parent="TextAppearance.AppCompat">
         <item name="android:textSize">14sp</item>
         <item name="fontFamily">sans-serif</item>

@@ -1,4 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Dimens -->
     <public name="pen_size" type="dimen" />
+    <public name="card_corner_radius" type="dimen" />
+    <public name="large" type="dimen" />
+    <public name="normal" type="dimen" />
+    <public name="small" type="dimen" />
+    <public name="normalText" type="dimen" />
+    <public name="smallText" type="dimen" />
+    <public name="titleText" type="dimen" />
+    <public name="subtitleText" type="dimen" />
+
+    <!-- Drawables -->
+    <public name="add_image" type="drawable" />
+    <public name="add_picture" type="drawable" />
+    <public name="background_button" type="drawable" />
+    <public name="background_button_main" type="drawable" />
+    <public name="background_circle" type="drawable" />
+    <public name="background_dotted_rounded" type="drawable" />
+    <public name="background_icon_round" type="drawable" />
+    <public name="background_round" type="drawable" />
+    <public name="background_selected_option_rounded" type="drawable" />
+    <public name="background_top_cornered" type="drawable" />
+    <public name="bookmark_selector" type="drawable" />
+    <public name="button_large_cornered" type="drawable" />
+    <public name="fa_edit" type="drawable" />
+    <public name="fa_logout" type="drawable" />
+    <public name="home_selector" type="drawable" />
+    <public name="ic_arrow_left" type="drawable" />
+    <public name="ic_arrow_right" type="drawable" />
+    <public name="ic_back" type="drawable" />
+    <public name="ic_bookmark_selected" type="drawable" />
+    <public name="ic_bookmark_unselected" type="drawable" />
+    <public name="ic_calendar" type="drawable" />
+    <public name="ic_close" type="drawable" />
+    <public name="ic_forward" type="drawable" />
+    <public name="ic_gps" type="drawable" />
+    <public name="ic_home_selected" type="drawable" />
+    <public name="ic_home_unselected" type="drawable" />
+    <public name="ic_info" type="drawable" />
+    <public name="ic_search" type="drawable" />
+    <public name="ic_settings_selected" type="drawable" />
+    <public name="ic_settings_unselected" type="drawable" />
+    <public name="round_refresh" type="drawable" />
+    <public name="settings_selector" type="drawable" />
+
+    <!-- Colors -->
+    <public name="text" type="color" />
+    <public name="text80" type="color" />
+    <public name="text60" type="color" />
+    <public name="text_light" type="color" />
+    <public name="text_warning" type="color" />
+    <public name="text_success" type="color" />
+    <public name="background_dialog" type="color" />
+    <public name="settings_card_background" type="color" />
+    <public name="settings_icon" type="color" />
+    <public name="seed" type="color" />
+    <public name="card_background" type="color"/>
+    <public name="card_background_stroke" type="color"/>
+
+    <!-- Themes -->
+    <public name="Atriz" type="style" />
+    <public name="Splash_Title" type="style" />
+    <public name="Title" type="style" />
+    <public name="Subtitle" type="style" />
+    <public name="Label" type="style" />
+    <public name="Footer" type="style" />
+    <public name="Login_Input" type="style" />
+    <public name="Login_Button" type="style" />
 </resources>
