@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="text">#000000</color>
-    <color name="text80">#CC000000</color>
-    <color name="text60">#99000000</color>
-    <color name="text_light">#FFFFFF</color>
-    <color name="text_warning">#fe6665</color>
-    <color name="text_success">#40A30A</color>
-    <color name="background_dialog">#f7f7f7</color>
-    <color name="settings_card_background">#f9f9f9</color>
-    <color name="settings_icon">#000000</color>
-    <color name="seed">#4285F4</color>
+    <!-- theme -->
     <color name="md_theme_light_primary">#005AC1</color>
     <color name="md_theme_light_onPrimary">#FFFFFF</color>
     <color name="md_theme_light_primaryContainer">#D8E2FF</color>
@@ -70,7 +61,20 @@
     <color name="md_theme_dark_onSurface">#C7C6CA</color>
     <color name="md_theme_dark_surfaceVariant">#44474F</color>
     <color name="md_theme_dark_onSurfaceVariant">#C4C6D0</color>
-    <!-- Custom theme color -->
+
+    <!-- custom theme -->
+    <color name="text">#000000</color>
+    <color name="text80">#CC000000</color>
+    <color name="text60">#99000000</color>
+    <color name="text_light">#FFFFFF</color>
+    <color name="text_warning">#fe6665</color>
+    <color name="text_success">#40A30A</color>
+    <color name="background_dialog">#f7f7f7</color>
+    <color name="settings_card_background">#f9f9f9</color>
+    <color name="settings_icon">#000000</color>
+    <color name="seed">#4285F4</color>
     <color name="card_background">#FFFFFF</color>
     <color name="card_background_stroke">#F5F5F5</color>
+    <color name="button_background">#FFFFFF</color>
+
 </resources>

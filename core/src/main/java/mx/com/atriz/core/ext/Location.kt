@@ -1,11 +1,15 @@
 package mx.com.atriz.core.ext
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.location.Geocoder
 import android.location.Location
 import android.os.Build
 import android.os.Bundle
+import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationServices
+import com.google.android.gms.tasks.Task
 import mx.com.atriz.core.entities.Event
 import java.util.Locale
 
@@ -48,4 +52,20 @@ fun Location.toAddress(maxResults: Int = 1, context: Context): String {
     }
 
     return builder.toString()
+}
+
+@SuppressLint("MissingPermission")
+fun Context.getLastKnownLocation(onSuccess: (Location) -> Unit, onFailure: (Exception) -> Unit) {
+    val fusedLocationClient: FusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this)
+    try {
+        val locationResult: Task<Location> = fusedLocationClient.lastLocation
+        locationResult.addOnSuccessListener { location: Location? ->
+            location?.let { onSuccess(it) } ?: onFailure(Exception("Location not found"))
+        }
+        locationResult.addOnFailureListener { exception: Exception ->
+            onFailure(exception)
+        }
+    } catch (e: SecurityException) {
+        onFailure(e)
+    }
 }

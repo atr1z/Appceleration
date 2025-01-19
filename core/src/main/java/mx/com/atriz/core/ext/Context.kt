@@ -3,6 +3,8 @@ package mx.com.atriz.core.ext
 import android.app.ActivityManager
 import android.content.Context
 import android.content.Intent
+import android.location.LocationManager
+import android.provider.Settings
 import mx.com.atriz.core.service.Tracker
 
 @Suppress("DEPRECATION")
@@ -28,4 +30,14 @@ fun Context.stopLocationService() {
     if (isLocationServiceRunning()) {
         stopService(Intent(this, Tracker::class.java))
     }
+}
+
+fun Context.isGpsEnabled(): Boolean {
+    val locationManager = getSystemService(Context.LOCATION_SERVICE) as LocationManager
+    return locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)
+}
+
+fun Context.goToGpsSettings() {
+    val intent = Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS)
+    startActivity(intent)
 }
