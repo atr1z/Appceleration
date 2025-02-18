@@ -1,2 +1,2 @@
 # Appceleration
-Clean-achitecture pre-baked features for any project
+Clean-architecture pre-baked features for any project

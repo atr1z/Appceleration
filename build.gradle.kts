@@ -20,7 +20,7 @@ allprojects {
         outputColorName.set("RED")
         ignoreFailures.set(true)
         enableExperimentalRules.set(true)
-        //disabledRules.set(setOf("final-newline"))
+        // disabledRules.set(setOf("final-newline"))
         kotlinScriptAdditionalPaths {
             include(fileTree("scripts/"))
         }

@@ -1,26 +1,26 @@
 [versions]
-agp = "8.6.1"
-androidx-activity = "1.9.3"
+agp = "8.8.0"
+androidx-activity = "1.10.0"
 androidx-appcompat = "1.7.0"
 androidx-cardview = "1.0.0"
-androidx-compose = "2024.11.00"
+androidx-compose = "2025.02.00"
 androidx-constraintlayout = "2.2.0"
 androidx-coordinator = "1.2.0"
 androidx-core = "1.15.0"
 androidx-core-remoteviews = "1.1.0"
-androidx-datastore = "1.1.1"
+androidx-datastore = "1.1.2"
 androidx-dinamicanimation = "1.0.0-alpha03"
 androidx-draganddrop = "1.0.0"
 androidx-espresso = "3.6.1"
-androidx-fragment = "1.8.5"
+androidx-fragment = "1.8.6"
 androidx-glance = "1.1.1"
 androidx-graphics = "1.0.2"
 androidx-junit = "1.2.1"
 androidx-lifecycle = "2.8.7"
 androidx-media = "1.7.0"
-androidx-media3 = "1.5.0"
-androidx-navigation = "2.8.4"
-androidx-recyclerview = "1.3.2"
+androidx-media3 = "1.5.1"
+androidx-navigation = "2.8.7"
+androidx-recyclerview = "1.4.0"
 androidx-transition = "1.5.1"
 androidx-startup = "1.2.0"
 androidx-swiperefreshlayout = "1.1.0"
@@ -37,19 +37,19 @@ androidxUiAutomator = "2.3.0"
 
 dipien = "2.0.0"
 grabver = "2.0.2"
-gradle-publish = "1.2.1"
+gradle-publish = "1.3.1"
 kotlin = "2.0.21"
-kotlin-coroutines = "1.8.0"
-kotlin-serialization = "1.6.3"
+kotlin-coroutines = "1.10.1"
+kotlin-serialization = "1.8.0"
 ksp = "2.0.21-1.0.26"
-safeargs = "2.8.4"
+safeargs = "2.8.6"
 services = "4.4.2"
-vanniktech = "0.28.0"
+vanniktech = "0.30.0"
 rx-java = "3.1.9"
 rx-android = "3.1.9"
 rx-kotlin = "3.0.1"
 
-koin = "3.5.6"
+koin = "4.0.2"
 
 # DataBase
 room = "2.6.1"
@@ -71,18 +71,18 @@ google-ads = "23.6.0"
 google-accompanist = "0.32.0"
 google-maps-utils = "3.8.2"
 google-maps = "19.0.0"
-firebase-bom = "33.7.0"
+firebase-bom = "33.9.0"
 
 # Facebook
 facebook-shimmer = "0.5.0"
 
 # Atriz
-atriz-core = "0.0.9"
-atriz-widgets = "0.0.9"
+atriz-core = "0.1.0"
+atriz-widgets = "0.1.0"
 atriz-domain = "0.0.1"
-atriz-catalogs = "0.0.16"
-atriz-application = "0.0.9"
-atriz-library = "0.0.6"
+atriz-catalogs = "0.0.17"
+atriz-application = "0.1.1"
+atriz-library = "0.0.8"
 
 # PDF
 viewer = "v2.0.7"
@@ -229,12 +229,13 @@ androidx-test-uiautomator = { group = "androidx.test.uiautomator", name = "uiaut
 android-application = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 android-test = { id = "com.android.test", version.ref = "agp" }
-atriz-application = { id = "mx.com.atriz.application", version.ref = "atriz-application"}
-atriz-library = { id = "mx.com.atriz.library", version.ref = "atriz-library"}
+atriz-application = { id = "mx.com.atriz.application", version.ref = "atriz-application" }
+atriz-library = { id = "mx.com.atriz.library", version.ref = "atriz-library" }
 dipien = { id = "com.dipien.semantic-version", version.ref = "dipien" }
 google-services = { id = "com.google.gms.google-services", version.ref = "services" }
 crashlytics = { id = "com.google.firebase.crashlytics", version = "3.0.2" }
 gradle-plublish = { id = "com.gradle.plugin-publish", version.ref = "gradle-publish" }
+central-publish = { id = "org.danilopianini.publish-on-central", version = "8.0.3" }
 grabver = { id = "eu.davidea.grabver", version.ref = "grabver" }
 kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
@@ -247,3 +248,4 @@ affectedmoduledetector = { id = "com.dropbox.affectedmoduledetector", version = 
 versionCatalogUpdate = { id = "nl.littlerobots.version-catalog-update", version = "0.7.0" }
 benManesVersions = { id = "com.github.ben-manes.versions", version = "0.44.0" }
 ktlint = { id = "org.jlleitschuh.gradle.ktlint", version = "12.1.1" }
+dokka = { id = "org.jetbrains.dokka", version = "2.0.0" }

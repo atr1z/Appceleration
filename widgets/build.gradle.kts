@@ -2,6 +2,7 @@ import com.vanniktech.maven.publish.AndroidSingleVariantLibrary
 import com.vanniktech.maven.publish.SonatypeHost
 
 plugins {
+    id("signing")
     alias(libs.plugins.android.library)
     alias(libs.plugins.atriz.library)
     alias(libs.plugins.kotlin)
@@ -63,6 +64,14 @@ mavenPublishing {
             developerConnection.set("scm:git:ssh://git@github.com/atr1z/Appceleration.git")
         }
     }
-    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
+    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL, automaticRelease = true)
     signAllPublications()
+}
+
+signing {
+    useInMemoryPgpKeys(
+        System.getenv("SIGNING_KEY").orEmpty(),
+        System.getenv("SIGNING_PASSWORD").orEmpty()
+    )
+    sign(publishing.publications)
 }

@@ -1,5 +1,6 @@
 package mx.com.atriz.core.ext
 
+import android.location.Location
 import android.os.Build
 import java.text.SimpleDateFormat
 import java.time.Duration
@@ -55,4 +56,13 @@ fun Date.day(): String {
 fun Date.simple(): String {
     val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
     return dateFormat.format(this)
+}
+
+fun Location.date(): String {
+    val dateTime = LocalDateTime.ofEpochSecond(
+        this.time / 1000,
+        0,
+        ZoneOffset.UTC
+    )
+    return dateTime.format(DateTimeFormatter.ofPattern("HH:mm:ss"))
 }

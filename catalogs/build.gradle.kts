@@ -2,6 +2,7 @@ import com.vanniktech.maven.publish.SonatypeHost
 import com.vanniktech.maven.publish.VersionCatalog
 
 plugins {
+    id("signing")
     id("version-catalog")
     alias(libs.plugins.publish)
 }
@@ -40,6 +41,14 @@ mavenPublishing {
             developerConnection.set("scm:git:ssh://git@github.com/atr1z/Appceleration.git")
         }
     }
-    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
+    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL, automaticRelease = true)
     signAllPublications()
+}
+
+signing {
+    useInMemoryPgpKeys(
+        System.getenv("SIGNING_KEY").orEmpty(),
+        System.getenv("SIGNING_PASSWORD").orEmpty()
+    )
+    sign(publishing.publications)
 }
