@@ -58,6 +58,11 @@ fun Date.simple(): String {
     return dateFormat.format(this)
 }
 
+fun Date.simpleTime(): String {
+    val dateFormat = SimpleDateFormat("dd/MM/yyyy HH:mm:ss", Locale.getDefault())
+    return dateFormat.format(this)
+}
+
 fun Location.date(): String {
     val dateTime = LocalDateTime.ofEpochSecond(
         this.time / 1000,

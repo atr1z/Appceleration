@@ -12,9 +12,7 @@ plugins {
 
 android {
     namespace = "mx.com.atriz.widgets"
-    buildFeatures {
-        compose = true
-    }
+    buildFeatures.compose = true
 }
 
 dependencies {
@@ -25,6 +23,11 @@ dependencies {
     implementation(libs.androidx.coordinator)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.runtime.runtime)
+    implementation(libs.androidx.compose.material3)
+    implementation(libs.androidx.compose.ui.ui)
+    implementation(libs.androidx.compose.ui.fonts)
+    implementation(libs.androidx.compose.ui.tooling.preview)
+    implementation(libs.androidx.compose.foundation.foundation)
     implementation(libs.androidx.core)
     implementation(libs.androidx.fragment)
     implementation(libs.androidx.recyclerview)

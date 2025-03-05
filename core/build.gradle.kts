@@ -6,20 +6,25 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.atriz.library)
     alias(libs.plugins.kotlin)
+    alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.publish)
 }
 
 android {
     namespace = "mx.com.atriz.core"
+    buildFeatures.compose = true
 }
 
 dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.core)
-    // implementation(libs.androidx.activity.compose)
-    // implementation(platform(libs.androidx.compose.bom))
-    // implementation(libs.androidx.compose.runtime.runtime)
+    implementation(libs.androidx.activity.compose)
+    implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.androidx.compose.runtime.runtime)
+    implementation(libs.androidx.compose.material3)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.compose.ui.fonts)
     implementation(libs.androidx.navigation)
     implementation(libs.google.material)
     implementation(libs.google.location)

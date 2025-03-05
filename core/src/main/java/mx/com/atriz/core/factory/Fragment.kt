@@ -63,6 +63,8 @@ abstract class Fragment<viewBinding : ViewBinding, navigation : AppInterface> :
         setUpViewListeners()
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED, stateMachinery())
+        }
+        lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 locationUpdates()
             }
