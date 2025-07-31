@@ -1,5 +1,4 @@
 import com.vanniktech.maven.publish.AndroidSingleVariantLibrary
-import com.vanniktech.maven.publish.SonatypeHost
 
 plugins {
     id("signing")
@@ -67,7 +66,7 @@ mavenPublishing {
             developerConnection.set("scm:git:ssh://git@github.com/atr1z/Appceleration.git")
         }
     }
-    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL, automaticRelease = true)
+    publishToMavenCentral(automaticRelease = true)
     signAllPublications()
 }
 

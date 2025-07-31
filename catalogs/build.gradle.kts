@@ -1,4 +1,3 @@
-import com.vanniktech.maven.publish.SonatypeHost
 import com.vanniktech.maven.publish.VersionCatalog
 
 plugins {
@@ -41,7 +40,7 @@ mavenPublishing {
             developerConnection.set("scm:git:ssh://git@github.com/atr1z/Appceleration.git")
         }
     }
-    publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL, automaticRelease = true)
+    publishToMavenCentral(automaticRelease = true)
     signAllPublications()
 }
 
