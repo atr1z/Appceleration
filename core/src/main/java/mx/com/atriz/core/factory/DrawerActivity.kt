@@ -6,13 +6,10 @@ import androidx.activity.compose.setContent
 import mx.com.atriz.core.theme.AppTheme
 
 class DrawerActivity : ComponentActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            AppTheme {
-
-            }
+            AppTheme { }
         }
     }
 }

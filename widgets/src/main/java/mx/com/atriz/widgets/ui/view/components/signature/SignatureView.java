@@ -17,7 +17,6 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
-
 import java.io.ByteArrayOutputStream;
 
 import mx.com.atriz.widgets.R;
@@ -407,6 +406,7 @@ public class SignatureView extends View {
      *
      * @return boolean
      */
+    @SuppressLint("WrongThread")
     public boolean isBitmapEmpty() {
         if (bmp != null) {
             Bitmap emptyBitmap = Bitmap.createBitmap(bmp.getWidth(), bmp.getHeight(),
